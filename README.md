@@ -1,4 +1,4 @@
-# Spam_Email_Classfier
+
 <h1 align="center">🚀📧 Spam Email Classifier 🔍💌</h1>
 <p align="center">
   <b>💼 Final Internship Project at Celebal Technologies 💼</b><br>
@@ -50,10 +50,52 @@ This is my final project for the **Data Science Internship at Celebal Technologi
 ## 📁 Project Structure
 
 ```bash
-📦 spam-email-classifier
+📦 Spam_Email_Classifier
 ├── app.py                 # 🎨 Streamlit frontend
 ├── train_model.py         # 🏋️ Model training script
 ├── spambase.data          # 🧾 Raw dataset
 ├── spam_classifier.pkl    # 💾 Trained model
 ├── requirements.txt       # 📦 Required packages
 └── README.md              # 📘 You are here!
+```
+
+---
+
+## 🚀 How to Run This Project (Step-by-Step)
+
+### 1️⃣ Clone this repository
+```bash
+git clone https://github.com/S-Abhishekk/Spam_Email_Classfier
+cd Spam_Email_Classifier
+```
+
+### 2️⃣ Create a virtual environment 🌱
+```bash
+python3 -m venv venv
+source venv/bin/activate      # 🐧 For Linux/macOS/Codespaces
+# OR
+venv\Scripts\activate         # 🪟 For Windows
+```
+
+### 3️⃣ Install the dependencies 📦
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Train the model (if not already trained) 🤖
+```bash
+python train_model.py
+```
+
+> This generates a file: `spam_classifier.pkl` which is used by the Streamlit app
+
+### 5️⃣ Launch the Streamlit web app 🚪
+```bash
+streamlit run app.py
+```
+
+Then open your browser to:
+```
+http://localhost:8501
+```
+
